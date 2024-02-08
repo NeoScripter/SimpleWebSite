@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my simple website.</p>
-    <script src="script.js"></script>
+    <h1>Welcome to my simple website!</h1>
+    <!-- Add an element where the user's name will be displayed -->
+    <p id="greeting"></p>
+    <script>
+        let name = prompt("Пожалуйста, введите ваше имя:", '');
+        if(name) { // Check if the name was entered
+            document.getElementById('greeting').textContent = `Привет, ${name}!`;
+        } else {
+            document.getElementById('greeting').textContent = "Привет, гость!";
+        }
+    </script>
 </body>
 </html>
