@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to my simple website!</h1>
-    <!-- Add an element where the user's name will be displayed -->
-    <p id="greeting"></p>
-    <script>
-        let name = prompt("Пожалуйста, введите ваше имя:", '');
-        if(name) { // Check if the name was entered
-            document.getElementById('greeting').textContent = `Привет, ${name}!`;
-        } else {
-            document.getElementById('greeting').textContent = "Привет, гость!";
-        }
-    </script>
+    <h1>Greetings!</h1>
+    <p>Would you like to see a picture of a hamster?</p>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+    
+    <div id="response"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
